@@ -3,7 +3,7 @@ const cookieParser = require("cookie-parser");
 const AuthRoutes = require("./routes/auth.routes");
 
 const app = express();
-app.use(express.json())
+app.use(express.json());
 app.use(cookieParser());
 
 
