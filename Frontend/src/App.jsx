@@ -1,13 +1,12 @@
-import './App.css'
-import FaceExpression from './feature/Expression/components/FaceExpression'
+import { RouterProvider } from "react-router";
+import { router } from "./app.routes.jsx"
+import "./feature/shared/styles/global.scss"
 
 function App() {
 
 
   return (
-    <>
-      <FaceExpression />
-    </>
+    <RouterProvider  router={router} />
   )
 }
 
