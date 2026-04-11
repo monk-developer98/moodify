@@ -39,7 +39,7 @@ async function registerUser(req , res){
     return res.status(201).json({
         message: "User Registered Successfully",
         user:{
-            id: user_id,
+            id: user._id,
             username:user.username,
             email:user.email
         }
